@@ -1,8 +1,9 @@
-import 'smartphoto/css/smartphoto.min.css'
-import SmartPhoto from 'smartphoto'
+// Global pollution, terrible
+import 'lightgallery.js/dist/css/lightgallery.css'
+import 'lightgallery.js'
 
-console.log('Loaded')
+console.log('Loaded ')
 
-new SmartPhoto('#gallery a', {
-  resizeStyle: 'fit',
+lightGallery(document.querySelector('#gallery'), {
+  download: false,
 })

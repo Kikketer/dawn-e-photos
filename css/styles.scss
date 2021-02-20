@@ -106,7 +106,8 @@ nav h1 {
   flex-direction: column;
 
   a {
-    margin: 0;
+    max-width: 400px;
+    margin: auto;
   }
 
   img {
