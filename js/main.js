@@ -8,4 +8,20 @@ import './vendor/modernizr-3.11.2.min'
 import './plugins'
 import 'spotlight.js'
 
-console.log('Loaded ')
+const observer = new IntersectionObserver(
+  (entries) => {
+    entries.forEach((entry) => {
+      if (entry.isIntersecting) {
+        entry.target.classList.add('vis')
+      }
+    })
+  },
+  {
+    threshold: 0.3,
+  }
+)
+
+const images = document.querySelectorAll('.spotlight')
+images.forEach((img) => {
+  observer.observe(img)
+})
