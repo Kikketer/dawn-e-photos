@@ -1,13 +1,3 @@
-// Import the CSS
-import '../css/variables.css'
-import '../css/normalize.css'
-import '../css/simple.css'
-import '../css/styles.scss'
-
-import './vendor/modernizr-3.11.2.min'
-import './plugins'
-import 'spotlight.js'
-
 const observer = new IntersectionObserver(
   (entries) => {
     entries.forEach((entry) => {
@@ -24,4 +14,10 @@ const observer = new IntersectionObserver(
 const images = document.querySelectorAll('.spotlight')
 images.forEach((img) => {
   observer.observe(img)
+})
+
+// Menu for mobile
+document.querySelector('.menu-link').addEventListener('click', (e) => {
+  const menu = document.querySelector('#menu')
+  menu.classList.toggle('active')
 })

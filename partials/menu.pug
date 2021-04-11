@@ -1,0 +1,15 @@
+mixin menu(current)
+  .menu-bar
+    a.menu-link(href='#menu')
+      img(src='/img/menu.svg')
+  #menu
+    nav
+      ul
+        li
+          a(href='/' class='current') Gallery
+        li
+          a(href='/about') About
+        //li
+        //  a(href='/experiences') Experiences
+        li
+          a(href='/contact') Contact
