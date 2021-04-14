@@ -1,6 +1,20 @@
 @import 'variables.css';
 @import 'simple.css';
 
+h1 {
+  font-size: 1.8rem;
+}
+
+h2 {
+  font-size: 1.4rem;
+}
+
+h1,
+h2 {
+  margin-top: 1rem;
+  line-height: 2rem;
+}
+
 /*
  Add transition to containers so they can push in and out.
  */
@@ -106,6 +120,7 @@
   animation-name: fade;
   animation-duration: 1s;
   animation-fill-mode: forwards;
+  font-family: Roboto, sans-serif;
 }
 .menu-bar {
   background: rgba(41, 41, 41, 0.7);

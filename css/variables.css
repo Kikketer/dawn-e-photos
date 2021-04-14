@@ -1,6 +1,7 @@
 :root {
-  --sans-font: -apple-system, BlinkMacSystemFont, 'Avenir Next', Avenir, 'Nimbus Sans L', Roboto, Noto, 'Segoe UI',
-    Arial, Helvetica, 'Helvetica Neue', sans-serif;
+  --sans-font: -apple-system, BlinkMacSystemFont, Roboto, Noto, 'Segoe UI', Arial, Helvetica, 'Helvetica Neue',
+    sans-serif;
+  --header-font: Roboto Slab, sans-serif;
   --mono-font: Consolas, Menlo, Monaco, 'Andale Mono', 'Ubuntu Mono', monospace;
   --base-fontsize: 1.15rem;
   --header-scale: 1.25;

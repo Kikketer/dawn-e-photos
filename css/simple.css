@@ -18,6 +18,14 @@ body {
   line-height: var(--line-height);
   margin: 0;
 }
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: var(--header-font);
+}
 main {
   margin: 1rem auto 0;
   max-width: 1000px;
@@ -65,32 +73,6 @@ footer {
   font-size: 0.9rem;
   text-align: center;
   border-top: 1px solid var(--border);
-}
-h1 {
-  font-size: calc(
-    var(--base-fontsize) * var(--header-scale) * var(--header-scale) * var(--header-scale) * var(--header-scale)
-  );
-  margin-top: calc(var(--line-height) * 1.5rem);
-}
-h2 {
-  font-size: calc(var(--base-fontsize) * var(--header-scale) * var(--header-scale) * var(--header-scale));
-  margin-top: calc(var(--line-height) * 1.5rem);
-}
-h3 {
-  font-size: calc(var(--base-fontsize) * var(--header-scale) * var(--header-scale));
-  margin-top: calc(var(--line-height) * 1.5rem);
-}
-h4 {
-  font-size: calc(var(--base-fontsize) * var(--header-scale));
-  margin-top: calc(var(--line-height) * 1.5rem);
-}
-h5 {
-  font-size: var(--base-fontsize);
-  margin-top: calc(var(--line-height) * 1.5rem);
-}
-h6 {
-  font-size: calc(var(--base-fontsize) / var(--header-scale));
-  margin-top: calc(var(--line-height) * 1.5rem);
 }
 a {
   color: var(--link);
