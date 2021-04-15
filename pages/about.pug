@@ -1,35 +1,41 @@
-include ../partials/headers
+---
+title: About
+---
+extends ../partials/page
 include ../partials/menu
-doctype html
-+headers('About')
-#layout
-  +menu('about')
-  main
-    header
-      img(alt="Dawn E Photography" src="/img/DawnEPhotoLogo-Transparent.png")
-      p.text-center Remember the moment, not the session
-    section
-      h1 Documentary Photography
-      p So you’re here because you want some family photos. You’re trying to choose the perfect photographer, but finding it to be difficult and overwhelming. I get it. The whole world is oversaturated with information it makes decisions hard. I have compiled a quick list of reasons why documentary family photography - also known as family photojournalism - is by far the best, and most significant choice.
 
-      h2 Capture reality, not the latest trend
-      p You want unique and meaningful photographs of your family, not matching outfits and holding hands walking around in a pretty park somewhere. Oh, yes you do, you really do. Your family is worthy of beautiful portraits that capture you and your authentic selves.
+block body
+  #layout
+    +menu('about')
+    main.text
+      header
+        img(alt="Dawn E Photography" src="/img/DawnEPhotoLogo-Transparent.png")
+        p.text-center Remember the moment, not the session
+      section
+        h1 Documentary Photography
+        p So you’re here because you want some family photos. You’re trying to choose the perfect photographer, but finding it to be difficult and overwhelming. I get it. The whole world is oversaturated with information it makes decisions hard. I have compiled a quick list of reasons why documentary family photography - also known as family photojournalism - is by far the best, and most significant choice.
 
-      h2 Memories
-      p It’s popular to talk about “capturing this season of life” that you’re currently in, and to sound completely trite: that’s absolutely what it’s all about. Looking at a photo from a documentary session can bring you right back to what it felt like to be in that moment in time. Instead of remembering all the crying from your toddlers about how you just wanted them to smile for the camera, you can oogle their little fingers and toes, adorable squishy cheeks, and their personalities for years to come. <em>Remember the moment, not the session.</em>
+        h2 Capture reality, not the latest trend
+        p You want unique and meaningful photographs of your family, not matching outfits and holding hands walking around in a pretty park somewhere. Oh, yes you do, you really do. Your family is worthy of beautiful portraits that capture you and your authentic selves.
 
-      h2 Emotions
-      p Your kiddo wipes out and the big lip-wobbling sobs ensue; your teen is in their awkward eye-rolling stage; your partner tells a fantastically corny joke and you get a catching case of the giggles. All of these emotions are encouraged and REAL. You can’t fabricate real emotion, and that makes all the difference.
+        h2 Memories
+        p It’s popular to talk about “capturing this season of life” that you’re currently in, and to sound completely trite: that’s absolutely what it’s all about. Looking at a photo from a documentary session can bring you right back to what it felt like to be in that moment in time. Instead of remembering all the crying from your toddlers about how you just wanted them to smile for the camera, you can oogle their little fingers and toes, adorable squishy cheeks, and their personalities for years to come. <em>Remember the moment, not the session.</em>
 
-      h2 Great for introverts or camera shy
-      p Does anyone really ever feel that comfortable getting their photo taken? Honestly, it feels like you’re being exposed and put on stage. With family photojournalism, you don’t have to worry about looking perfect, because SPOILER ALERT: you already are perfect, just as you are. Just be yourself, and I can make some gorgeous photographs of that.
+        h2 Emotions
+        p Your kiddo wipes out and the big lip-wobbling sobs ensue; your teen is in their awkward eye-rolling stage; your partner tells a fantastically corny joke and you get a catching case of the giggles. All of these emotions are encouraged and REAL. You can’t fabricate real emotion, and that makes all the difference.
 
-      h2 No bossing or directing
-      p Telling people where to stand or how to hold their hands makes me as uncomfortable as you; and it’s awkward. So there will be none of that. Posing looks just as it sounds: posed. Relax and enjoy yourselves as you usually would, there might even be moments you won’t realize I’m there. I’ll be there to spend time along with you and your family and not telling you what to do the whole time. We’ll be good friends by the end of the session, as I’m just along for the ride.
+        h2 Great for introverts or camera shy
+        p Does anyone really ever feel that comfortable getting their photo taken? Honestly, it feels like you’re being exposed and put on stage. With family photojournalism, you don’t have to worry about looking perfect, because SPOILER ALERT: you already are perfect, just as you are. Just be yourself, and I can make some gorgeous photographs of that.
 
-      p Doesn’t this sound like the most lovely thing ever? Family photojournalism is for everyone and that is why you have read this far. Now send me an email, so I know you’re interested, and we’ll chat about what your session will look like in detail.
-      p Can’t wait to hear from you.
-  footer
-    p
-      a(href='mailto:dawn@dawnephotos.com') Contact Dawn
-script(src='/js/main.js')
+        h2 No bossing or directing
+        p Telling people where to stand or how to hold their hands makes me as uncomfortable as you; and it’s awkward. So there will be none of that. Posing looks just as it sounds: posed. Relax and enjoy yourselves as you usually would, there might even be moments you won’t realize I’m there. I’ll be there to spend time along with you and your family and not telling you what to do the whole time. We’ll be good friends by the end of the session, as I’m just along for the ride.
+
+        p Doesn’t this sound like the most lovely thing ever? Family photojournalism is for everyone and that is why you have read this far. Now send me an email, so I know you’re interested, and we’ll chat about what your session will look like in detail.
+        p Can’t wait to hear from you.
+
+block footer
+  p
+    a(href='/contact') Contact Me
+
+block scripts
+  script(src='/js/main.js')

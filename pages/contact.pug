@@ -1,26 +1,22 @@
-include ../partials/headers
+---
+title: Contact
+---
+extends ../partials/page
 include ../partials/menu
-mixin image(source)
-  a.spotlight(href='./img/' + source +'_1200.jpg' data-zoom='false' data-theme='false' data-player='false' data-autofit='false' data-fullscreen='false')
-    img(
-      loading='lazy'
-      src='./img/' + source + '_1200.jpg'
-      srcset='./img/' + source + '_600.jpg 600w, ./img/' + source + '_1200.jpg 1200w'
-      sizes='(max-width: 600px) 480px, 800px'
-      alt=''
-    )
 
-doctype html
-+headers('Gallery')
-#layout
-  +menu('gallery')
-  main
-    header
-      img(alt="Dawn E Photography" src="/img/DawnEPhotoLogo-Transparent.png")
-      p.text-center Remember the moment, not the session
-    section
-      p Hi
-  footer
-    p
-      a(href='mailto:dawn@dawnephotos.com') Contact Dawn
-script(src='/js/main.js')
+block body
+  #layout
+    +menu('contact')
+    main
+      header
+        img(alt="Dawn E Photography" src="/img/DawnEPhotoLogo-Transparent.png")
+        p.text-center Remember the moment, not the session
+      section
+        include ../partials/contactForm
+
+block footer
+  a.formFooter-logoLink(href='https://www.jotform.com/?utm_source=formfooter&utm_medium=banner&utm_term=211038227258048&utm_content=jotform_logo&utm_campaign=powered_by_jotform_le' target='_blank')
+    img.formFooter-logo(src='https://cdn.jotfor.ms/assets/img/logo/logo-new@1x.png' alt='Jotform Logo')
+
+block scripts
+  script(src='/js/main.js')

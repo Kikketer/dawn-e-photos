@@ -1,5 +1,9 @@
-include ../partials/headers
+---
+title: Gallery
+---
+extends ../partials/page
 include ../partials/menu
+
 mixin image(source)
   a.spotlight(href='./img/' + source +'_1200.jpg' data-zoom='false' data-theme='false' data-player='false' data-autofit='false' data-fullscreen='false')
     img(
@@ -10,18 +14,20 @@ mixin image(source)
       alt=''
     )
 
-doctype html
-+headers('Gallery')
-#layout
-  +menu('gallery')
-  main
-    header
-      img(alt="Dawn E Photography" src="./img/DawnEPhotoLogo-Transparent.png")
-      p.text-center Remember the moment, not the session
-    section#gallery
-      each item in images
-        +image(item.src)
-  footer
-    p
-      a(href='mailto:dawn@dawnephotos.com') Contact Dawn
-script(src='/js/main.js')
+block body
+  #layout
+    +menu('gallery')
+    main
+      header
+        img(alt="Dawn E Photography" src="./img/DawnEPhotoLogo-Transparent.png")
+        p.text-center Remember the moment, not the session
+      section#gallery
+        each item in images
+          +image(item.src)
+
+block footer
+  p
+    a(href='/contact') Contact Me
+
+block scripts
+  script(src='/js/main.js')
