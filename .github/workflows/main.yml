@@ -38,4 +38,4 @@ jobs:
         github_token: ${{ secrets.GITHUB_TOKEN }}
         publish_dir: ./dist
         publish_branch: site
-        cname: www.dawnephotography.com
+        cname: www.kikketer.com
