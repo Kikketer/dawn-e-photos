@@ -5,7 +5,7 @@ extends ../partials/page
 include ../partials/menu
 
 mixin image(source)
-  a.spotlight(href='./img/' + source +'_1200.jpg' data-zoom='false' data-theme='false' data-player='false' data-autofit='false' data-fullscreen='false')
+  a.spotlight(href='./img/' + source +'_1200.jpg' data-zoom='false' data-theme='false' data-player='false' data-autofit='false' data-fullscreen='false' data-description=source)
     img(
       loading='lazy'
       src='./img/' + source + '_1200.jpg'
