@@ -1,5 +1,5 @@
 :root {
-  --sans-font: -apple-system, BlinkMacSystemFont, Roboto, Noto, 'Segoe UI', Arial, Helvetica, 'Helvetica Neue',
+  --sans-font: Roboto, Noto, 'Segoe UI', Arial, Helvetica, 'Helvetica Neue', -apple-system, BlinkMacSystemFont,
     sans-serif;
   --header-font: Roboto Slab, sans-serif;
   --mono-font: Consolas, Menlo, Monaco, 'Andale Mono', 'Ubuntu Mono', monospace;
