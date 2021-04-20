@@ -202,8 +202,17 @@ footer {
 }
 
 @media (min-width: 700px) {
-  main.text {
+  .text {
     padding: 0 25px;
+  }
+
+  .img-block {
+    text-align: center;
+  }
+
+  .text img {
+    width: 50%;
+    margin: 10px auto;
   }
 
   .header,
