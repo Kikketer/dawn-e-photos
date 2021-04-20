@@ -16,6 +16,10 @@ h2 {
   line-height: 2rem;
 }
 
+header {
+  margin-bottom: 10px;
+}
+
 /*
  Add transition to containers so they can push in and out.
  */
@@ -198,6 +202,9 @@ footer {
 @media (min-width: 400px) {
   #menu {
     right: -150px;
+  }
+  header {
+    margin-bottom: 25px;
   }
 }
 

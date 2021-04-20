@@ -188,6 +188,7 @@ textarea {
   width: 80%;
   min-height: 100px;
 }
+
 @media only screen and (max-width: 720px) {
   input,
   select,
@@ -195,6 +196,7 @@ textarea {
     width: 100%;
   }
 }
+
 input[type='checkbox'],
 input[type='radio'] {
   width: auto;
