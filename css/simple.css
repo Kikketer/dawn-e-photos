@@ -11,6 +11,7 @@ body {
   font-size: var(--base-fontsize);
   line-height: var(--line-height);
   margin: 0;
+  font-weight: 300;
 }
 h1,
 h2,
