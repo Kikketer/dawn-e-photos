@@ -18,8 +18,10 @@
 }
 
 input,
-textarea {
+textarea,
+select {
   font-size: var(--base-fontsize);
+  appearance: auto;
 }
 
 .form-error-message {

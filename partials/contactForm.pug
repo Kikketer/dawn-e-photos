@@ -29,13 +29,27 @@ form#211038227258048.jotform-form(action='https://submit.jotform.com/submit/2110
   .form-all(role='main')
     h1#header_1.form-header(data-component='header')
       | Contact Me
-      li#id_3.form-line(data-type='control_email')
-        label#label_3.form-label.form-label-top.form-label-auto(for='input_3')  Your Email
-        #cid_3.form-input-wide(data-layout='half')
+      li#id_3.form-line.jf-required(data-type='control_email')
+        label#label_3.form-label.form-label-top.form-label-auto(for='input_3')
+          | Your Email
+          span.form-required
+            | *
+        #cid_3.form-input-wide.jf-required(data-layout='half')
           span.form-sub-label-container(style='vertical-align:top')
-            input#input_3.form-textbox(type='email' name='q3_yourEmail' class='validate[Email]' value='' data-component='email' aria-labelledby='label_3 sublabel_input_3')
+            input#input_3.form-textbox(type='email' name='q3_yourEmail' class='validate[required, Email]' value='' data-component='email' aria-labelledby='label_3 sublabel_input_3' required='')
+            label#sublabel_input_3.form-sub-label(for='input_3' style='min-height:13px' aria-hidden='false')  example@example.com
+      li#id_6.form-line.jf-required(data-type='control_dropdown')
+        label#label_6.form-label.form-label-top.form-label-auto(for='input_6')
+          | What type of session are you looking for?
+          span.form-required
+            | *
+        #cid_6.form-input-wide.jf-required(data-layout='half')
+          select#input_6.form-dropdown(class='validate[required]' name='q6_whatType' data-component='dropdown' required='' aria-labelledby='label_6')
+            option(value='Full Day')  Full Day
+            option(value='1/2 Day')  1/2 Day
+            option(value='2 Hours')  2 Hours
       li#id_4.form-line(data-type='control_textarea')
-        label#label_4.form-label.form-label-top.form-label-auto(for='input_4')  Any thoughts you have for your sesson?
+        label#label_4.form-label.form-label-top.form-label-auto(for='input_4')  Any thoughts you have for your session?
         #cid_4.form-input-wide(data-layout='full')
           textarea#input_4.form-textarea(name='q4_anyThoughts' data-component='textarea' aria-labelledby='label_4')
       li#id_2.form-line(data-type='control_button')

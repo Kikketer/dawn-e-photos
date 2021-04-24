@@ -168,6 +168,12 @@ nav h1 {
   text-align: center;
 }
 
+img.floater {
+  max-height: 300px;
+  display: block;
+  margin: auto;
+}
+
 #gallery {
   display: grid;
   grid-template-columns: 1fr;
@@ -220,6 +226,14 @@ footer {
   .text img {
     width: 50%;
     margin: 10px auto;
+  }
+
+  img.floater {
+    display: inline;
+    float: right;
+    width: 60%;
+    max-width: 400px;
+    margin: 10px;
   }
 
   .header,
