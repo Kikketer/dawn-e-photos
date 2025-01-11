@@ -1,4 +1,4 @@
-module.exports = function () {
+export default function () {
   return {
     images: [
       { src: '2019-09-22_0756_DSC_2152' },

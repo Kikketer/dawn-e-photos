@@ -1,6 +1,6 @@
-@import 'variables.css';
-@import 'simple.css';
-@import 'myJot.css';
+@import '_variables.css';
+@import '_simple.css';
+@import '_myJot.css';
 
 h1 {
   font-size: 1.8rem;
