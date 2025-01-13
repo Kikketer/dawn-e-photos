@@ -4,13 +4,13 @@ endpoint: contact
 ---
 extends ../partials/page
 include ../partials/menu
+include ../partials/heading
 
 block body
   #layout
     +menu('contact')
     main
-      header
-        img(alt="Dawn E Photography" src="/img/DawnEPhotoLogo-Transparent.png")
+      +heading()
       section
         p Hey, I'm Dawn. I'm a "no-frills" kind of lady. I honestly believe in the beauty of the simple everyday life. If you come over to my house any given day of the week, there is a high probability of toys strewn all over the floor, a clean basket of laundry in dire need of a good fluff and fold, and my kids engaged in some sort of high-decibel imaginative play.
         img.floater(src="/img/featured/Dawn-Cat-Camera_800.jpeg" srcset="/img/featured/Dawn-Cat-Camera_800.jpeg 1x, /img/featured/Dawn-Cat-Camera_1600.jpeg 2x" alt="Dawn with her cat and camera")
