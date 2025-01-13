@@ -185,6 +185,10 @@ img.floater {
   gap: 1rem;
 }
 
+#portfolio img {
+  width: 100%;
+}
+
 #gallery {
   display: grid;
   grid-template-columns: 1fr;

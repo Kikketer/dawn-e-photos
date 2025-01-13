@@ -1,0 +1,38 @@
+name: Build on Push
+on:
+  workflow_dispatch:
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+    steps:
+      - uses: actions/checkout@v3
+
+      - name: Create Images
+        run: |
+          cd raw-images
+          mogrify -set filename:name %t -resize 1200 -write '../../img/%[filename:name]_1200.jpg' *.jpg
+          mogrify -set filename:name %t -resize 600 -write '../../img/%[filename:name]_600.jpg' *.jpg
+        shell: bash
+
+      - name: Commit and push images
+        run: |
+          git config --local user.email "action@github.com"
+          git config --local user.name "GitHub Action"
+          git add img/*
+          git commit -m "Add resized images" -a || echo "No changes to commit"
+          git push
+
+      - name: Delete raw images and commit
+        run: |
+          rm -f raw-images/*.jpg
+          git config --local user.email "action@github.com"
+          git config --local user.name "GitHub Action"
+          git add -u raw-images/
+          git commit -m "Remove processed raw images" || echo "No changes to commit"
+          git push
+
+      - name: Build site
+        run: npm run build
