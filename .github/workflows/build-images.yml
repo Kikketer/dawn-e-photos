@@ -32,7 +32,9 @@ jobs:
 
       - name: Delete raw images and commit
         run: |
+          shopt -s nocaseglob
           rm -f raw-images/*.jpg
+          shopt -u nocaseglob
           git config --local user.email "action@github.com"
           git config --local user.name "GitHub Action"
           git add -u raw-images/
