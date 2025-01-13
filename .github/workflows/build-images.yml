@@ -17,8 +17,8 @@ jobs:
         run: |
           cd raw-images
           shopt -s nocaseglob
-          mogrify -set filename:name %t -resize 1200 -write '../../img/%[filename:name]_1200.jpg' *.jpg
-          mogrify -set filename:name %t -resize 600 -write '../../img/%[filename:name]_600.jpg' *.jpg
+          mogrify -set filename:name %t -resize 1200 -write '../img/%[filename:name]_1200.jpg' *.jpg
+          mogrify -set filename:name %t -resize 600 -write '../img/%[filename:name]_600.jpg' *.jpg
           shopt -u nocaseglob
         shell: bash
 
