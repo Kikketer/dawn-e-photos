@@ -1,0 +1,31 @@
+---
+title: Portfolio
+endpoint: portfolio
+---
+extends ../partials/page
+include ../partials/menu
+include ../partials/heading
+
+mixin image(source, link)
+  a(href=link target='_blank')
+    img(
+      loading='lazy'
+      src='/img/' + source + '_1200.jpg'
+      srcset='/img/' + source + '_600.jpg 600w, /img/' + source + '_1200.jpg 1200w'
+      sizes='(max-width: 600px) 480px, 800px'
+      alt=''
+    )
+
+block body
+  #layout
+    +menu('portfolio')
+    main
+      +heading()
+      section#portfolio
+        each item in images
+          +image(item.src, item.link)
+
+block footer
+  a.social-link(href="/contact")
+    img.contact(src="/img/icons/contact.svg")
+

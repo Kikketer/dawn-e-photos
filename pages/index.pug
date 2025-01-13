@@ -1,9 +1,10 @@
 ---
-title: Gallery
+title: Home
 endpoint: ""
 ---
 extends ../partials/page
 include ../partials/menu
+include ../partials/heading
 
 mixin image(source)
   a.spotlight(href='./img/' + source +'_1200.jpg' data-zoom='false' data-theme='false' data-player='false' data-autofit='false' data-fullscreen='false' data-title='false')
@@ -19,9 +20,7 @@ block body
   #layout
     +menu('gallery')
     main
-      header
-        img(alt="Dawn E Photography" src="./img/DawnEPhotoLogo-Transparent.png")
-        //p.text-center Remember the moment, not the session
+      +heading()
       section#gallery
         each item in images
           +image(item.src)

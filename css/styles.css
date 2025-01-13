@@ -20,6 +20,11 @@ header {
   margin-bottom: 10px;
 }
 
+header img {
+  width: 100%;
+  padding: 0 2rem;
+}
+
 /*
  Add transition to containers so they can push in and out.
  */
@@ -174,6 +179,16 @@ img.floater {
   margin: auto;
 }
 
+#portfolio {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1rem;
+}
+
+#portfolio img {
+  width: 100%;
+}
+
 #gallery {
   display: grid;
   grid-template-columns: 1fr;
@@ -259,6 +274,10 @@ footer .description {
     margin: 10px;
   }
 
+  header img {
+    width: 50%
+  }
+
   .header,
   .content {
     padding-left: 2em;
@@ -287,6 +306,10 @@ footer .description {
 
   .menu-bar {
     display: none;
+  }
+
+  #portfolio {
+    grid-template-columns: repeat(2, 1fr);
   }
 
   #gallery {

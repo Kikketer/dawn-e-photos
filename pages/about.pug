@@ -4,6 +4,7 @@ endpoint: contact
 ---
 extends ../partials/page
 include ../partials/menu
+include ../partials/heading
 
 mixin imageBlock(name, alt)
   .img-block
@@ -14,8 +15,7 @@ block body
   #layout
     +menu('about')
     main
-      header
-        img(alt="Dawn E Photography" src="/img/DawnEPhotoLogo-Transparent.png")
+      +heading()
       section.text
         h1 Documentary Photography
         p So you’re here because you want some family photos. You’re trying to choose the perfect photographer, but finding it to be difficult and overwhelming. I get it. The whole world is oversaturated with information it makes decisions hard. I have compiled a quick list of reasons why documentary family photography - also known as family photojournalism - is by far the best, and most significant choice.
