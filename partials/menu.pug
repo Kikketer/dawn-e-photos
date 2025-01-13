@@ -3,14 +3,15 @@ mixin menu(current)
     a.menu-link(href='#menu')
       img(src='/img/menu.svg')
   #menu
-    img.logo(src='/img/DawnEPhotoLogo-Transparent.png' alt="Dawn E Photography")
+    a(href='/')
+      img.logo(src='/img/DawnEPhotoLogo-Transparent.png' alt="Dawn E Photography")
     nav
       ul
         li
-          a(href='/' class='current') Gallery
+          a(href='/' class='current') Home
+        li
+          a(href='/portfolio') Portfolio
         li
           a(href='/about') About
-        //li
-        //  a(href='/experiences') Experiences
         li
           a(href='/contact') Contact
