@@ -1,5 +1,5 @@
 import pugPlugin from '@11ty/eleventy-plugin-pug'
-import { minify as minifyHtml } from 'html-minifier'
+import htmlnano from 'htmlnano'
 import { minify as minifyJs } from 'uglify-js'
 import postcss from 'postcss'
 import postcssImport from 'postcss-import'
@@ -42,15 +42,11 @@ export default function (eleventyConfig) {
   })
 
   // minify the html output
-  eleventyConfig.addTransform('htmlmin', (content, outputPath) => {
+  eleventyConfig.addTransform('htmlmin', async (content, outputPath) => {
     if (outputPath.endsWith('.html')) {
       console.log('transforming HTML', outputPath)
-      let minified = minifyHtml(content, {
-        useShortDoctype: true,
-        removeComments: true,
-        collapseWhitespace: true,
-      })
-      return minified
+      let minified = await htmlnano.process(content)
+      return minified.html
     }
     return content
   })
