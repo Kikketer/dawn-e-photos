@@ -60,7 +60,7 @@ export default function () {
         link: 'https://dawn-e-photography.client-gallery.com/gallery/schmidt-family',
       },
       {
-        src: 'Wright',
+        src: 'wright',
         title: 'Wright Family',
         link: 'https://dawn-e-photography.client-gallery.com/gallery/wright-family',
       },
