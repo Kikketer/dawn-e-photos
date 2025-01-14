@@ -6,12 +6,12 @@ extends ../partials/page
 include ../partials/menu
 include ../partials/heading
 
-mixin image(source, link)
-  a(href=link target='_blank')
+mixin image(source, link, title)
+  a(href=link target='_blank' aria-label=`View ${title} Session Images`)
     img(
       loading='lazy'
-      src='/img/' + source + '_1200.jpg'
-      srcset='/img/' + source + '_600.jpg 600w, /img/' + source + '_1200.jpg 1200w'
+      src='/img/portfolio/' + source + '_1200.jpg'
+      srcset='/img/portfolio/' + source + '_600.jpg 600w, /img/portfolio/' + source + '_1200.jpg 1200w'
       sizes='(max-width: 600px) 480px, 800px'
       alt=''
     )
@@ -23,7 +23,9 @@ block body
       +heading()
       section#portfolio
         each item in images
-          +image(item.src, item.link)
+          .title-overlay
+            .title #{item.title}
+            +image(item.src, item.link, item.title)
 
 block footer
   a.social-link(href="/contact")

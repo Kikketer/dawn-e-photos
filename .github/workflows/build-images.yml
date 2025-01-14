@@ -1,4 +1,4 @@
-name: Build on Push
+name: Build Images
 on:
   workflow_dispatch:
 
@@ -10,11 +10,16 @@ jobs:
     steps:
       - uses: actions/checkout@v3
 
+      - name: Install ImageMagick
+        run: sudo apt-get update && sudo apt-get install -y imagemagick
+
       - name: Create Images
         run: |
           cd raw-images
-          mogrify -set filename:name %t -resize 1200 -write '../../img/%[filename:name]_1200.jpg' *.jpg
-          mogrify -set filename:name %t -resize 600 -write '../../img/%[filename:name]_600.jpg' *.jpg
+          shopt -s nocaseglob
+          mogrify -set filename:name %t -resize 1200 -write '../img/%[filename:name]_1200.jpg' *.jpg
+          mogrify -set filename:name %t -resize 600 -write '../img/%[filename:name]_600.jpg' *.jpg
+          shopt -u nocaseglob
         shell: bash
 
       - name: Commit and push images
@@ -27,7 +32,9 @@ jobs:
 
       - name: Delete raw images and commit
         run: |
+          shopt -s nocaseglob
           rm -f raw-images/*.jpg
+          shopt -u nocaseglob
           git config --local user.email "action@github.com"
           git config --local user.name "GitHub Action"
           git add -u raw-images/
