@@ -1,57 +1,105 @@
 export default function () {
   return {
     images: [
-      { src: 'beerman', title: 'Beerman', link: 'https://dawn-e-photography.client-gallery.com/gallery/george-family' },
       {
-        src: 'blanchards',
-        title: 'Blanchards',
+        src: 'george',
+        title: 'George Family',
         link: 'https://dawn-e-photography.client-gallery.com/gallery/george-family',
       },
-      { src: 'carapia', title: 'Carapia', link: 'https://dawn-e-photography.client-gallery.com/gallery/george-family' },
+
+      {
+        src: 'blanchards',
+        title: 'Blanchard Grandparents',
+        link: 'https://dawn-e-photography.client-gallery.com/gallery/blanchard-family-fall-2023',
+      },
+      {
+        src: 'hoffman',
+        title: 'Hoffman Family',
+        link: 'https://dawn-e-photography.client-gallery.com/gallery/hoffman-family',
+      },
+      {
+        src: 'gilmores',
+        title: 'Gilmore Family',
+        link: 'https://dawn-e-photography.client-gallery.com/gallery/gilmore-family',
+      },
+
       {
         src: 'fllregionals',
-        title: 'FLL Regionals',
-        link: 'https://dawn-e-photography.client-gallery.com/gallery/george-family',
+        title: 'FLL Regionals 2024',
+        link: 'https://dawn-e-photography.client-gallery.com/gallery/fll-regionals-2024',
+      },
+      {
+        src: 'beerman',
+        title: 'Beerman Spooky Pop-Up',
+        link: 'https://dawn-e-photography.client-gallery.com/gallery/beerman-spooky-pop-up',
+      },
+      {
+        src: 'carapia',
+        title: 'Carapia Family',
+        link: 'https://dawn-e-photography.client-gallery.com/gallery/carapia-family',
       },
       {
         src: 'fllscrimmage',
-        title: 'FLL Scrimmage',
-        link: 'https://dawn-e-photography.client-gallery.com/gallery/george-family',
+        title: 'FLL Scrimmage Oregon, WI 2024',
+        link: 'https://dawn-e-photography.client-gallery.com/gallery/fll-scrimmage-oregon-wi',
       },
-      { src: 'george', title: 'George', link: 'https://dawn-e-photography.client-gallery.com/gallery/george-family' },
-      {
-        src: 'gilmores',
-        title: 'Gilmores',
-        link: 'https://dawn-e-photography.client-gallery.com/gallery/george-family',
-      },
-      { src: 'hoffman', title: 'Hoffman', link: 'https://dawn-e-photography.client-gallery.com/gallery/george-family' },
-      { src: 'mcgowan', title: 'Mcgowan', link: 'https://dawn-e-photography.client-gallery.com/gallery/george-family' },
-      {
-        src: 'schmidts',
-        title: 'Schmidts',
-        link: 'https://dawn-e-photography.client-gallery.com/gallery/george-family',
-      },
-      { src: 'wright', title: 'Wright', link: 'https://dawn-e-photography.client-gallery.com/gallery/george-family' },
-      { src: 'coyle', title: 'Coyle', link: 'https://dawn-e-photography.client-gallery.com/gallery/george-family' },
       {
         src: 'elibday',
-        title: 'His Birthday',
-        link: 'https://dawn-e-photography.client-gallery.com/gallery/george-family',
+        title: "Eli's 12th Birthday - IMAO",
+        link: 'https://dawn-e-photography.client-gallery.com/gallery/elis-12th-birthday-infinity-martial-arts-oregon-wi',
       },
+
+      {
+        src: 'mcgowan',
+        title: 'Mcgowan Family',
+        link: 'https://dawn-e-photography.client-gallery.com/gallery/mcgowan-family',
+      },
+      {
+        src: 'schmidts',
+        title: 'Schmidt Family',
+        link: 'https://dawn-e-photography.client-gallery.com/gallery/schmidt-family',
+      },
+      {
+        src: 'Wright',
+        title: 'Wright Family',
+        link: 'https://dawn-e-photography.client-gallery.com/gallery/wright-family',
+      },
+      {
+        src: 'coyle',
+        title: 'Coyle Family',
+        link: 'https://dawn-e-photography.client-gallery.com/gallery/coyle-family',
+      },
+
       {
         src: 'ginnybday',
-        title: 'Her Birthday',
-        link: 'https://dawn-e-photography.client-gallery.com/gallery/george-family',
+        title: "Ginny's 8th Birthday - IMAO",
+        link: 'https://dawn-e-photography.client-gallery.com/gallery/ginnys-8th-birthday-party-infinity-martial-arts',
       },
-      { src: 'goble', title: 'Goble', link: 'https://dawn-e-photography.client-gallery.com/gallery/george-family' },
+      {
+        src: 'goble',
+        title: 'Goble Family',
+        link: 'https://dawn-e-photography.client-gallery.com/gallery/goble-family',
+      },
       {
         src: 'martinez',
-        title: 'Martinez',
-        link: 'https://dawn-e-photography.client-gallery.com/gallery/george-family',
+        title: 'Martinez Family',
+        link: 'https://dawn-e-photography.client-gallery.com/gallery/martinez-family-autumn',
       },
-      { src: 'rumble', title: 'Rumble', link: 'https://dawn-e-photography.client-gallery.com/gallery/george-family' },
-      { src: 'swanson', title: 'Swanson', link: 'https://dawn-e-photography.client-gallery.com/gallery/george-family' },
-      { src: 'vanci', title: 'Vanci', link: 'https://dawn-e-photography.client-gallery.com/gallery/george-family' },
+      {
+        src: 'rumble',
+        title: 'Rumble on The Ridge - Ultra Race',
+        link: 'https://dawn-e-photography.client-gallery.com/gallery/rumble-on-the-ridge-arena-wi',
+      },
+      {
+        src: 'swanson',
+        title: 'Swanson Family',
+        link: 'https://dawn-e-photography.client-gallery.com/gallery/swanson-family',
+      },
+      {
+        src: 'vanci',
+        title: 'Vancil Family',
+        link: 'https://dawn-e-photography.client-gallery.com/gallery/vancil-family',
+      },
     ],
   }
 }
